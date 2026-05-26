@@ -34,13 +34,28 @@ p {
     font-size: 16px;
 }
 
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: 15px 80px;
     background-color: hsl(200, 17%, 37%);
-    box-shadow: 0 5px 15px hsl(0, 0%, 69%);
+    box-shadow: 0 5px 15px -4px hsl(0, 0%, 69%);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    max-height: 5vh;
 }
 
 #nav-bar {
@@ -57,7 +72,7 @@ header {
 
 #nav-bar li a, header a{
     text-decoration: none;
-    color: #1a1a1a;
+    color: hsl(205, 76%, 10%);
     font-weight: 600;
     transition: 0.2s ease;
 }
@@ -82,11 +97,11 @@ header {
     background-image: url(/public_html/image/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top 25% right 0;
+    background-position: right 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start ;
+    align-items: flex-start;
 }
 
 #hero h1, p, button, span {
@@ -108,9 +123,135 @@ header {
     margin: 0 30px;
     font-size: 16px;
     font-weight: 600;
+    color: hsl(205, 76%, 10%);
+    box-shadow: 0 5px 15px hsl(0, 0%, 17%);
+    border: 0;
+    border-radius: 2px;
+    transition: 0.3s ease;
 }
 
-#hero span p{
-    color: #a3cfe0;
+#hero button:hover {
+    background-color: hsl(205, 76%, 10%);
+    color: hsl(240, 100%, 95%);
+    box-shadow: 0 5px 15px hsl(0, 0%, 69%);
+}
+
+#beneficios {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#beneficios .be-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid hsl(0, 0%, 45%);
+    border-radius: 5px;
+    box-shadow: 15px 15px 25px hsl(0, 0%, 89%);
+    margin: 10px 5px;
+    transition: 0.3s ease;
+}
+
+#beneficios .be-box:hover {
+    box-shadow: 5px 5px 40px hsl(0, 0%, 63%);
+}
+
+#beneficios .be-box img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#beneficios .be-box h6 {
+    padding: 9px 8px;
+    color: hsl(205, 76%, 10%);
+    background-color: hsl(129, 90%, 89%);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+#beneficios .be-box:nth-child(2) h6 {
+    background-color: hsl(300, 94%, 86%);
+}
+
+#beneficios .be-box:nth-child(3) h6{
+    background-color: hsl(118, 94%, 86%);
+}
+
+#beneficios .be-box:nth-child(4) h6{
+    background-color: hsl(219, 94%, 86%);
+}
+
+#beneficios .be-box:nth-child(5) h6{
+    background-color: hsl(29, 94%, 86%);
+}
+
+#catalogo {
+    text-align: center;
+}
+
+#catalogo #prod-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#catalogo h6, p {
     padding: 10px 0;
+    margin: 20px 0;
+}
+
+#catalogo .prod {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    margin: 15px 0;
+    border: 1px solid hsl(0, 0%, 88%);
+    border-radius: 4px;
+    box-shadow: 15px 15px 25px hsl(0, 0%, 89%);
+    transition: 0.3s ease;
+}
+
+#catalogo .prod:hover {
+    box-shadow: 5px 5px 40px hsl(0, 0%, 63%);
+}
+
+#catalogo .prod img {
+    width: 100%;
+}
+
+#catalogo .prod .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#catalogo .prod .des span {
+    color: hsl(0, 0%, 43%);
+    font-size: 12px;
+    margin: 0;
+}
+
+#catalogo .prod .des h5 {
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+#catalogo .prod .des .star {
+    font-size: 12px;
+    color: hsl(60, 100%, 50%);
+    padding: 7px 0;
+}
+
+#catalogo .prod .des h4 {
+    font-size: 16px;
+    color: hsl(205, 76%, 10%);
+}
+
+#catalogo .prod .cart {
+    width: 100%;
+    padding: 12px 0;
+    background-color: hsl(205, 76%, 10%);
+    color: hsl(0, 0%, 89%);
 }
