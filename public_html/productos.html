@@ -1,60 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Fast Moda | Productos</title>
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-            <div class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Producto</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        
-        <main>
-            <h1>Nuestra Colección</h1>
 
-            <div class="product_item">
-                <a href="#"><img src="image/tshirt.png" alt="tshirt"></a>
-                <h3>Camiseta Esencial</h3>
-                <p>Algodón 100% orgánico, corte perfecto.</p>
-                <h2>S/ 35.00</h2>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="product_item">
-                <a href="#"><img src="image/jeans.png" alt="Jean Clásico Slim"></a>
-                <h3>Jean Clásico Slim</h3>
-                <p>Denim de alta calidad, ajuste cómodo.</p>
-                <h2>S/ 80.00</h2>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="product_item">
-                <a href="#"><img src="image/jacket.png" alt="Chaqueta Urbana"></a>
-                <h3>Chaqueta Urbana</h3>
-                <p>Diseño moderno, resistente al clima.</p>
-                <h2>S/ 120.00</h2>
-                <button>Añadir al carrito</button>
-            </div>
-        </main>
+<header>
 
-        <footer>
-            <div>
-                <p>© 2026 Fashion Style. Transformando la moda.</p>
+    <a href="index.html">
+        <img src="image/FM.png" alt="logo">
+    </a>
+
+    <div>
+        <ul id="nav-bar">
+
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a class="active" href="#">Producto</a>
+            </li>
+
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+
+            <li>
+                <a href="carrito.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+</header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Redefine tu estilo personal</h1>
+            <p>Descubre nuestra nueva colección de ropa moderna, elegante y cómoda.</p>
+            <a href="#productos" class="hero-btn">Ver Colección</a>
+        </div>
+    </section>
+
+    <section class="products-section" id="productos">
+        <h2>Nuestra Colección</h2>
+
+        <div class="products-container">
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="image/tshirt.png" alt="Camiseta Esencial">
+                </div>
+                <div class="product-info">
+                    <h3>Camiseta Esencial</h3>
+                    <p>Algodón premium con diseño minimalista.</p>
+                    <h4>S/ 35.00</h4>
+                    <button>Añadir al carrito</button>
+                </div>
             </div>
-        </footer>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="image/jeans.png" alt="Jean Clásico Slim">
+                </div>
+                <div class="product-info">
+                    <h3>Jean Clásico Slim</h3>
+                    <p>Denim moderno con ajuste cómodo y elegante.</p>
+                    <h4>S/ 80.00</h4>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="image/jacket.png" alt="Chaqueta Urbana">
+                </div>
+                <div class="product-info">
+                    <h3>Chaqueta Urbana</h3>
+                    <p>Estilo urbano premium para cualquier ocasión.</p>
+                    <h4>S/ 120.00</h4>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 FAST MODA - Transformando la moda.</p>
+    </footer>
+
 </body>
 </html>
